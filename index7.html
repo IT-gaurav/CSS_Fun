@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 200px;
+            height: 250px;
+            border-radius: 10%;
+            background: rgb(240, 204, 180);
+        }
+
+        div {
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            position: relative;
+            animation-name: example;
+            animation-duration: 4s;
+            border-radius: 50%;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes example {
+
+            0%,
+            100% {
+                background-color: red;
+                left: 10px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: greenyellow;
+                left: 0px;
+                top: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <div> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

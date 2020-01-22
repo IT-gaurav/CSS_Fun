@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index 6</title>
+</head>
+
+
+<style>
+    @keyframes scaleup {
+
+        0% {
+            transform: scale(1, 1);
+            transform-origin: center;
+            background-color: orangered;
+        }
+
+        50%,
+        100% {
+            transform: scale(1.5, 1.5);
+            transform-origin: center;
+            opacity: 0;
+        }
+
+    }
+
+    @keyframes scaledown {
+
+        0% {
+            transform: scale(4.5, 4.5);
+            transform-origin: center;
+            background-color: greenyellow;
+        }
+
+        50% {
+            transform: scale(1, 1);
+            transform-origin: center;
+            background-color: yellow;
+        }
+
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    body {
+        border: 1px solid;
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+    .content {
+        width: 150px;
+        height: 150px;
+        background: orangered;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        transform: rotate(0deg);
+        align-items: center;
+        animation: scaleup 3s ease-in-out infinite;
+        border-radius: 50%;
+    }
+
+    .box {
+        width: 150px;
+        height: 150px;
+        background: orangered;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+</style>
+
+
+<body>
+    <div class="box">
+        <div class="content">
+            <div class="content">
+                <div class="content"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

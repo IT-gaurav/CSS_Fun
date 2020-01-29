@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+
+<style>
+    @keyframes upDown {
+
+        0%,
+        100% {
+            bottom: 0%;
+            top: 0%;
+            position: relative;
+        }
+
+        50% {
+            bottom: 100%;
+            top: 90%;
+        }
+    }
+
+    body {
+        border: 1px solid;
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .ball {
+        width: 35px;
+        height: 35px;
+        border-radius: 50px;
+        animation: upDown 2s ease-in-out infinite;
+        box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.2);
+        background: yellowgreen;
+        position: relative;
+
+    }
+
+    .content {
+        width: 250px;
+        height: 250px;
+        background: orangered;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+    }
+</style>
+
+<body>
+    <div class="content ">
+        <div class="ball"> </div>
+    </div>
+</body>
+
+</html>
